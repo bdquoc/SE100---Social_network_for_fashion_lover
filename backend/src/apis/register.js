@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-const registerController = require('../controllers/login/RegisterController')
-const {validate, checkDuplicate} = require('../middlewares/register/validator')
+const registerController = require('../controllers/auth/RegisterController')
+const {validate, checkDuplicate} = require('../middlewares/auth/register')
 
 router.use(express.json())
-router.use('/', validate, checkDuplicate, registerController.create)
+router.use('/', registerController.create)
 
 module.exports = router

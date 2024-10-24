@@ -1,5 +1,6 @@
 const User = require('../../models/user')
 const mongoose = require('mongoose')
+const connectToDb = require('../../config/database/db')
 mongoose.set('debug',true)
 
 class RegisterController {
@@ -10,20 +11,20 @@ class RegisterController {
 
 
         try {
-            const [{value: email}, {value: password}, {value: phone}, {value: firstName}, {value: lastName}, {value: role}, {value: avatar}] = req.body
+            connectToDb()
+            console.log(req.body)
+            const {email, password, firstName, lastName, phone} = req.body
 
             const newUser = User({
                 email: email,
                 password: password,
-                phone: phone,
                 firstname: firstName,
                 lastname: lastName,
-                role: role,
-                avatar: avatar,
+                phone: phone,
                 createdAt: new Date()                
             })
 
-            console.log(newUser)
+            //console.log(newUser)
 
             await newUser.save()
 
