@@ -19,6 +19,8 @@ const SideBar = () => {
       display="flex"
       justifyContent="center"
       alignContent="center"
+      position={'fixed'}
+      top={0}
       sx={{
         backgroundColor: "#ffffff"
       }}

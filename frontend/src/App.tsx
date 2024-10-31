@@ -8,6 +8,9 @@ import RegisterPage from './pages/auth/RegisterPage'
 import SideBar from './components/sideBar/SideBar';
 import theme from './themes/theme';
 import { ThemeProvider } from '@mui/material';
+import SideBar_Right from './components/sideBar/SideBarRight/SideBarRight';
+import ExplorePage from './pages/explore/ExplorePage';
+import ExploreForm from './components/explore/ExploreForm';
 
 const App = () => {
   return (
@@ -15,8 +18,10 @@ const App = () => {
       <Routes>
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage/>}/>
+      <Route path="/explore" element={<ExplorePage/>}/>
+      <Route path="/exploreform" element={<ExploreForm/>}/>
 
-        
+      {/* <Route path="/sidebarright" element={<SideBar_Right/>}/> */}
       <Route path="/message" element={<SideBar/>} />
     </Routes>
     </ThemeProvider>
