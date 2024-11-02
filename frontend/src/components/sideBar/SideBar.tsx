@@ -14,13 +14,15 @@ const SideBar = () => {
     <Box
       component="div"
       id="wrapperSideBar"
-      width="20vw"
+      width="100%"
       height="100vh"
       display="flex"
       justifyContent="center"
       alignContent="center"
+      
       sx={{
-        backgroundColor: "#ffffff"
+        backgroundColor: "#ffffff",
+        boxShadow: "2px 0px 10px -5px rgba(0, 0, 0, 0.2)"
       }}
     >
       <Box
@@ -130,7 +132,7 @@ const SideBar = () => {
           {/* Item sticking to the bottom */}
 
           <Link href="/login" underline="none">
-            <Box display="flex" alignItems="center" gap={1} id="logOut" height="40px">
+            <Box display="flex" alignItems="center" gap={1} id="logOut" height="40px" padding="10px" borderRadius="10px">
               <ExitToAppOutlined sx={{ color: "#89966B" }} />
               <Typography fontFamily="Inter" color='#89966B' fontWeight="500">Log out</Typography>
 

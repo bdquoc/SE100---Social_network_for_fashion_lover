@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import ProtectedRoutes from './components/auth/ProtectedRoutes';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage'
-import SideBar from './components/sideBar/SideBar';
+import MessagePage from './pages/message/MessagePage';
 import theme from './themes/theme';
 import { ThemeProvider } from '@mui/material';
 
@@ -17,7 +17,7 @@ const App = () => {
       <Route path="/register" element={<RegisterPage/>}/>
 
         
-      <Route path="/message" element={<SideBar/>} />
+      <Route path="/message" element={<MessagePage/>} />
     </Routes>
     </ThemeProvider>
     
