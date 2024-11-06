@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid2, Paper } from "@mui/material";
 import SideBar from "../../sideBar/SideBar";
-import SideBar_Right from "../../sideBar/SideBarRight/SideBarRight";
+import SideBarHome from "../../sideBar/SideBarRight/SideBarHome";
 
 interface ExploreCenterPage {
   children?: React.ReactNode; // Khai báo kiểu cho children
@@ -19,17 +19,17 @@ const ExplorePage: React.FC<ExploreCenterPage> = ({ children }) => {
         </Paper>
       </Grid2>
       <Grid2
-        size={7}
+        size={7.5}
         sx={{ display: "inline-block", justifyContent: "center" }}
       >
         <Paper>{children}</Paper>
       </Grid2>
       <Grid2
-        size={2.5}
+        size={2}
         sx={{ display: "inline-block", justifyContent: "flex-end" }}
       >
-        <Paper>
-          <SideBar_Right />
+        <Paper style={{width:"100%"}}>
+          <SideBarHome />
         </Paper>
       </Grid2>
     </Grid2>

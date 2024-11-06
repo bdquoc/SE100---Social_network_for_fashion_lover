@@ -2,9 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
+.container:hover{
+    background-color: #f0f0f0;
+}
 
 .avt {
     align-content: center;
@@ -36,4 +41,5 @@
 }
 .icon:hover {
     color:#C0C0C0;
+    cursor: pointer;
 }

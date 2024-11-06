@@ -4,13 +4,13 @@ import {} from "@mui/icons-material";
 
 import SearchBar from "../../shared/SearchBar/SearchBar";
 import FriendshipBar from "./FriendshipBar/FriendshipBar";
-import style from "../SideBarRight/SideBarRight.module.css";
+import style from "../SideBarRight/SideBarMessage.module.css";
 
 const SideBar_Right = () => {
   return (
     <div className={clsx(style.container)}
     style={{position:'fixed',top:0}}>
-      <SearchBar />
+      <SearchBar placeHolderString="Search for chats" /> 
       <div className={clsx(style.recent_chats_box)}>
         <h1 className={clsx(style.title)}>Recent Chats</h1>
         <FriendshipBar />

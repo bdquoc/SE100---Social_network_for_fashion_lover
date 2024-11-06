@@ -8,7 +8,6 @@ import RegisterPage from './pages/auth/RegisterPage'
 import SideBar from './components/sideBar/SideBar';
 import theme from './themes/theme';
 import { ThemeProvider } from '@mui/material';
-import SideBar_Right from './components/sideBar/SideBarRight/SideBarRight';
 import ExplorePage from './pages/explore/ExplorePage';
 import ExploreForm from './components/explore/ExploreForm';
 
